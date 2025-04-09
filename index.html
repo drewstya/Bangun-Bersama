@@ -5,102 +5,141 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bangun Bersama Store</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    * {
       margin: 0;
       padding: 0;
-      background-color: #f9f9f9;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
       color: #333;
+      line-height: 1.6;
     }
     header {
-      background-color: #ffffff;
-      padding: 1rem 2rem;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      background: url('https://images.unsplash.com/photo-1600585154704-4c1d00b5d1f8') no-repeat center center/cover;
+      height: 300px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
     }
     header h1 {
-      margin: 0;
-      font-size: 1.5rem;
+      font-size: 2.5rem;
+      background-color: rgba(0,0,0,0.5);
+      padding: 1rem 2rem;
+      border-radius: 10px;
     }
     nav {
-      margin-top: 0.5rem;
+      background-color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
     nav a {
-      margin-right: 1rem;
       text-decoration: none;
       color: #333;
+      font-weight: bold;
     }
     .hero {
       padding: 2rem;
-      background-color: #e0e0e0;
       text-align: center;
+      background-color: #fff;
     }
     .hero h2 {
+      font-size: 2rem;
       margin-bottom: 1rem;
     }
     .products {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
       padding: 2rem;
     }
     .product {
       background-color: #ffffff;
-      border-radius: 8px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
       padding: 1rem;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .product:hover {
+      transform: translateY(-5px);
     }
     .product img {
       width: 100%;
-      border-radius: 4px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
     }
     .product h3 {
-      margin: 0.5rem 0;
+      margin: 0.8rem 0 0.4rem;
+    }
+    .product p {
+      margin-bottom: 1rem;
+    }
+    .product a {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background-color: #333;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 0.9rem;
     }
     footer {
+      background-color: #333;
+      color: white;
       text-align: center;
       padding: 1rem;
-      background-color: #ffffff;
-      border-top: 1px solid #ddd;
       margin-top: 2rem;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Toko Pintu Minimalis</h1>
-    <nav>
-      <a href="#">Beranda</a>
-      <a href="#produk">Produk</a>
-      <a href="#kontak">Kontak</a>
-    </nav>
+    <h1>Bangun Bersama Store</h1>
   </header>
 
+  <nav>
+    <a href="#">Beranda</a>
+    <a href="#produk">Produk</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+
   <section class="hero">
-    <h2>Pintu Modern & Minimalis</h2>
-    <p>Desain elegan untuk rumah masa kini.</p>
+    <h2>Desain Pintu Modern</h2>
+    <p>Kuat, elegan, dan cocok untuk segala gaya rumah</p>
   </section>
 
   <section class="products" id="produk">
     <div class="product">
-      <img src="https://via.placeholder.com/300x200" alt="Pintu Kayu">
+      <img src="https://via.placeholder.com/400x250" alt="Pintu Kayu">
       <h3>Pintu Kayu Elegan</h3>
       <p>Rp1.500.000</p>
+      <a href="https://wa.me/6287808566677?text=Halo,%20saya%20tertarik%20dengan%20Pintu%20Kayu%20Elegan">Pesan via WhatsApp</a>
     </div>
     <div class="product">
-      <img src="https://via.placeholder.com/300x200" alt="Pintu Besi">
+      <img src="https://via.placeholder.com/400x250" alt="Pintu Besi">
       <h3>Pintu Besi Minimalis</h3>
       <p>Rp2.000.000</p>
+      <a href="https://wa.me/6287808566677?text=Halo,%20saya%20tertarik%20dengan%20Pintu%20Besi%20Minimalis">Pesan via WhatsApp</a>
     </div>
     <div class="product">
-      <img src="https://via.placeholder.com/300x200" alt="Pintu Kaca">
+      <img src="https://via.placeholder.com/400x250" alt="Pintu Kaca">
       <h3>Pintu Kaca Modern</h3>
       <p>Rp2.500.000</p>
+      <a href="https://wa.me/6287808566677?text=Halo,%20saya%20tertarik%20dengan%20Pintu%20Kaca%20Modern">Pesan via WhatsApp</a>
     </div>
   </section>
 
   <footer id="kontak">
-    <p>Hubungi kami: 0812-3456-7890 | email@example.com</p>
-    <p>&copy; 2025 Toko Pintu Minimalis</p>
+    <p>Hubungi kami di: 0878-0856-6677 | email@example.com</p>
+    <p>&copy; 2025 Bangun Bersama Store</p>
   </footer>
 </body>
 </html>
